@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Física Xai-Xai - Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Container de Autenticação -->
+  <div id="auth-container">
+    <!-- Seção de Login -->
+    <div id="login-section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="login-email">Email:</label>
+        <input type="email" id="login-email" required>
+        <label for="login-password">Senha:</label>
+        <input type="password" id="login-password" required>
+        <button type="submit">Entrar</button>
+      </form>
+      <p>Não tem conta? <a href="#" id="show-register">Cadastre-se</a></p>
+    </div>
+
+    <!-- Seção de Cadastro -->
+    <div id="register-section" style="display:none;">
+      <h2>Cadastro</h2>
+      <form id="register-form">
+        <label for="reg-name">Nome:</label>
+        <input type="text" id="reg-name" required>
+        <label for="reg-email">Email:</label>
+        <input type="email" id="reg-email" required>
+        <label for="reg-password">Senha:</label>
+        <input type="password" id="reg-password" required>
+        <label for="reg-confirm-password">Confirme a senha:</label>
+        <input type="password" id="reg-confirm-password" required>
+        <button type="submit">Cadastrar</button>
+      </form>
+      <p>Já tem conta? <a href="#" id="show-login">Entrar</a></p>
+    </div>
+  </div>
+
+  <!-- Conteúdo da Biblioteca (para usuários logados) -->
+  <div id="library-container" style="display:none;">
+    <header>
+      <h1>Biblioteca Física Xai-Xai</h1>
+      <nav>
+        <ul>
+          <li><a href="#livros">Livros</a></li>
+          <li><a href="#videos">Vídeos</a></li>
+          <li><a href="#exercicios">Exercícios</a></li>
+          <li><a href="#" id="logout">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Seção de Livros e Apostilas -->
+      <section id="livros">
+        <h2>Livros e Apostilas</h2>
+        <p>Acesse nossa coleção de livros digitais e apostilas para aprimorar seus conhecimentos em física.</p>
+        <!-- Exemplo de item -->
+        <article>
+          <h3>Título do Livro</h3>
+          <p>Descrição breve do conteúdo.</p>
+          <a href="#">Ler agora</a>
+        </article>
+      </section>
+
+      <!-- Seção de Vídeos Educativos -->
+      <section id="videos">
+        <h2>Vídeos Educativos</h2>
+        <p>Assista a vídeos que explicam conceitos de física de forma simples e didática.</p>
+        <div class="video-container">
+          <!-- Exemplo de vídeo incorporado -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <!-- Seção de Exercícios -->
+      <section id="exercicios">
+        <h2>Exercícios e Simulados</h2>
+        <p>Pratique e teste seus conhecimentos com nossos exercícios e simulados.</p>
+        <a href="#">Acessar Exercícios</a>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Biblioteca Física Xai-Xai. Todos os direitos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
+
+
